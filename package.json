@@ -1,5 +1,5 @@
 {
-  "name": "dnb-hugo-functions",
+  "name": "@dnb-org/dnb-hugo-functions",
   "version": "0.0.3",
   "license": "MIT",
   "description": "Template functions for Hugo",
@@ -11,10 +11,14 @@
   "homepage": "https://github.com/dnb-org/dnb-hugo-functions",
   "repository": "dnb-org/dnb-hugo-functions",
   "bugs": "https://github.com/dnb-org/dnb-hugo-functions/issues",
+  "dependencies": {
+    "mem": "^9.0.2",
+    "trim": "^1.0.1"
+  },
   "devDependencies": {
-    "@dnb-org/remark-config": "^3.4.2",
-    "@dnb-org/standard-version-config": "^3.4.1",
-    "@dnb-org/tools": "^3.4.1"
+    "@dnb-org/remark-config": "^3.4.9",
+    "@dnb-org/standard-version-config": "^3.4.8",
+    "@dnb-org/tools": "^3.4.10"
   },
   "scripts": {
     "clean": "run-p clean:*",
@@ -29,9 +33,5 @@
       "@dnb-org/remark-config"
     ]
   },
-  "slug": "dnb-hugo-functions",
-  "dependencies": {
-    "mem": "^9.0.1",
-    "trim": "^1.0.1"
-  }
+  "slug": "dnb-hugo-functions"
 }
