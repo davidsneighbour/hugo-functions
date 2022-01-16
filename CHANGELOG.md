@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/dnb-org/dnb-hugo-functions/compare/v0.0.4...v0.0.5) (2022-01-16)
+
+
+### Chore
+
+* **fix:** update release script call ([47d7d0e](https://github.com/dnb-org/dnb-hugo-functions/commit/47d7d0e524531b0fda3c2335bbd658be70bb679f))
+
 ### [0.0.4](https://github.com/dnb-org/dnb-hugo-functions/compare/v0.0.3...v0.0.4) (2022-01-16)
 
 
