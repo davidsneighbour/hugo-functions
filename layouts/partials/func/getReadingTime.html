@@ -3,8 +3,8 @@
 @since 1.0.0
 
 */ -}}
-{{- $wordsPerMinute := float (site.Data.dnb.functions.readingtime.config.wordsPerMinute | default 220.0) -}}
-{{- $minsecs := site.Data.dnb.functions.readingtime.config.minutesandseconds | default true -}}
+{{- $wordsPerMinute := float (site.Data.dnb.functions.readingtime.wordsPerMinute | default 220.0) -}}
+{{- $minsecs := site.Data.dnb.functions.readingtime.minutesandseconds | default true -}}
 {{- $words := countwords .Content -}}
 {{- $readTime := mul (div $words $wordsPerMinute) 60 -}}
 {{- $minutes := 0 -}}
@@ -19,5 +19,4 @@
 {{- end -}}
 
 {{- $output := (dict "minutes" (int $minutes) "seconds" (int $seconds) "words" (int $words)) -}}
-{{- /* partial "debugprint" $readingtime */ -}}
 {{- return $output -}}
