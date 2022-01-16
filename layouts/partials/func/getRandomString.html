@@ -1,8 +1,9 @@
 {{- /*
 
 @see https://discourse.gohugo.io/t/generate-a-random-string/26338
+@since 1.0.0
 
-```
+```gotemplate
 {{- $random := partialCached "func/getRandomString" (dict "limit" 8) -}}
 {{- $random := partialCached "func/getRandomString" . -}}
 ```
