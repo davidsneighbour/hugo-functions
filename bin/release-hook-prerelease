@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # declare path to this script
 SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 || exit ; pwd -P )"
@@ -12,6 +12,8 @@ if test -f "$SCRIPTPATH"/replacements; then
     go mod edit -dropreplace "${__[0]}"
   done < "$SCRIPTPATH"/replacements
 fi
+
+bin/prepare-docs
 
 hugo mod get -u ./...
 hugo mod tidy
