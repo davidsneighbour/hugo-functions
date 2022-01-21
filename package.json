@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@dnb-org/remark-config": "^3.4.9",
-    "@dnb-org/standard-version-config": "^3.4.8",
+    "@dnb-org/standard-version-config": "^3.4.9",
     "@dnb-org/tools": "^3.4.10"
   },
   "scripts": {
