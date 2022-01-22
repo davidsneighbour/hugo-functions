@@ -113,7 +113,7 @@ Checks if the string submitted contains characters of the [CJK Unified Ideograph
 {{- partial "func/isCJK.html" (dict "content" "a string" "against" "cjk") -}}
 ```
 
-Either submit a simple string or a dictionary containing the following parameters:
+Either submit a string or a dictionary containing the following parameters:
 
 - `content` - a string to test against
 - `against` - the range to test the string.
