@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/dnb-org/dnb-hugo-functions/compare/v1.0.0...v1.0.1) (2022-01-22)
+
+
+### Features
+
+* add isCJK.html ([9f52a86](https://github.com/dnb-org/dnb-hugo-functions/commit/9f52a865b81d6a220a703104528d035ac7f9ea6e))
+
+
+### Chore
+
+* **config:** update header images ([8248f0e](https://github.com/dnb-org/dnb-hugo-functions/commit/8248f0e66470ec4cbf9ea4580a833b0e8fba0d0f))
+
 ## [1.0.0](https://github.com/dnb-org/dnb-hugo-functions/compare/v0.0.5...v1.0.0) (2022-01-16)
 
 ### [0.0.5](https://github.com/dnb-org/dnb-hugo-functions/compare/v0.0.4...v0.0.5) (2022-01-16)

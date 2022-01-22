@@ -1,6 +1,6 @@
 {
   "name": "@dnb-org/dnb-hugo-functions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "Template functions for Hugo",
   "author": {
