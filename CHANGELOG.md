@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/dnb-org/dnb-hugo-functions/compare/v1.0.1...v1.0.2) (2022-01-22)
+
+
+### Features
+
+* add truncate.html ([dcec802](https://github.com/dnb-org/dnb-hugo-functions/commit/dcec8026aa9335c0ca53962091ca9191af3b6632))
+
+
+### Chore
+
+* **deps:** remove @dnb-org/remark-config from dependencies ([bbcd1c6](https://github.com/dnb-org/dnb-hugo-functions/commit/bbcd1c6b53dd66ef7326450e543ee3db3c0d3926))
+* **deps:** update dependencies ([e2dca7c](https://github.com/dnb-org/dnb-hugo-functions/commit/e2dca7c80d0dcfb80c1c99dd9be54ef0974ed57f))
+* **deps:** update dependencies ([f3cba95](https://github.com/dnb-org/dnb-hugo-functions/commit/f3cba954b6c8cd39762d4345ee030208345a5ee5))
+
+
+### Documentation
+
+* one does not simply call a string simple ([0266d96](https://github.com/dnb-org/dnb-hugo-functions/commit/0266d968b6e14561dbd4a1223ef7876eea0f383b))
+
+
+### Build System
+
+* refactor build system layout ([80b0c6f](https://github.com/dnb-org/dnb-hugo-functions/commit/80b0c6fd67ad41dbb9c5126e370e9a0120d7a666))
+
 ### [1.0.1](https://github.com/dnb-org/dnb-hugo-functions/compare/v1.0.0...v1.0.1) (2022-01-22)
 
 
