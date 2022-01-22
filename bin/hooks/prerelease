@@ -13,7 +13,7 @@ if test -f "$SCRIPTPATH"/replacements; then
   done < "$SCRIPTPATH"/replacements
 fi
 
-bin/prepare-docs
+bin/build/prepare-docs
 
 hugo mod get -u ./...
 hugo mod tidy
