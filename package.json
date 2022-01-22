@@ -12,13 +12,11 @@
   "repository": "dnb-org/dnb-hugo-functions",
   "bugs": "https://github.com/dnb-org/dnb-hugo-functions/issues",
   "devDependencies": {
-    "@dnb-org/remark-config": "^3.4.9",
     "@dnb-org/standard-version-config": "^3.4.9",
     "@dnb-org/tools": "^3.4.11"
   },
   "overrides": {
-    "mem": "^9.0.2",
-    "trim": "^1.0.1"
+    "mem": "^9.0.2"
   },
   "scripts": {
     "clean": "run-p clean:*",
@@ -28,10 +26,5 @@
     "release:minor": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease"
   },
   "private": true,
-  "remarkConfig": {
-    "plugins": [
-      "@dnb-org/remark-config"
-    ]
-  },
   "slug": "dnb-hugo-functions"
 }
