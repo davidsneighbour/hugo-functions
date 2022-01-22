@@ -11,14 +11,14 @@
   "homepage": "https://github.com/dnb-org/dnb-hugo-functions",
   "repository": "dnb-org/dnb-hugo-functions",
   "bugs": "https://github.com/dnb-org/dnb-hugo-functions/issues",
-  "dependencies": {
-    "mem": "^9.0.2",
-    "trim": "^1.0.1"
-  },
   "devDependencies": {
     "@dnb-org/remark-config": "^3.4.9",
-    "@dnb-org/standard-version-config": "^3.4.8",
-    "@dnb-org/tools": "^3.4.10"
+    "@dnb-org/standard-version-config": "^3.4.9",
+    "@dnb-org/tools": "^3.4.11"
+  },
+  "overrides": {
+    "mem": "^9.0.2",
+    "trim": "^1.0.1"
   },
   "scripts": {
     "clean": "run-p clean:*",

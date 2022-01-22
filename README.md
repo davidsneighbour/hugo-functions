@@ -106,7 +106,7 @@ Returns the current year. Use it for instance to display the current year in you
 
 _since 1.0.1_
 
-Checks if the string submitted contains characters of the [CJK Unified Ideographs](https://en.wikipedia.org/wiki/CJK_Unified_Ideographs) (or any configured) range, i.e. if the string is Chinese, Japanese, or Korean.
+Checks if the string submitted contains characters of the [CJK Unified Ideographs](https://en.wikipedia.org/wiki/CJK_Unified_Ideographs) (or any configured) character range, i.e. if the string is Chinese, Japanese, or Korean.
 
 ```golang
 {{- partial "func/isCJK.html" "a string" -}}
