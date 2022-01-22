@@ -62,6 +62,12 @@ While being named `functions` this component adds merely partials that return va
 
 ### Available Functions
 
+- [getRandomString](#getrandomstring)
+- [getReadingTime](#getreadingtime)
+- [getYear](#getyear)
+- [isCJK](#iscjk)
+- [truncate](#truncate)
+
 #### getRandomString
 
 _since 1.0.0_
@@ -123,6 +129,38 @@ Either submit a string or a dictionary containing the following parameters:
   - `mn` for Mongolian
 
 The partial checks against a configured [Unicode Block](https://en.wikipedia.org/wiki/Unicode_block), the results with special characters or encoding might vary.
+
+#### truncate
+
+_since 1.0.2_, see [GoHugo-Discourse thread](https://discourse.gohugo.io/t/create-description-from-summary/36676), that led to this function.
+
+```golang
+{{ range seq 1 200 }}
+  {{ $truncated := partial "func/truncate.html"
+      (dict
+        "content" $.Summary
+        "maxLength" .
+      ) }}
+  <pre>
+    {{ $truncated }}
+    (max = {{ . }}
+    actual = {{ strings.RuneCount $truncated }} )
+  </pre>
+{{ end }}
+```
+
+Truncates a submitted string by cutting at word borders. If the truncation occurs inside of a sentence then an ellipsis is added. If the truncation occurs at a sentence border (.?!) no ellipsis is added.
+
+**_TODO:_** If the string is within the CJK range then the string is truncated without regards to word or sentence borders and always has an ellipsis added if the string is longer than `maxLength`.
+
+Expects a dictionary with the following content:
+
+- `.content` - (required) content to truncate
+- `.maxlength` - (optional) length at which to truncate, defaults to 150 characters
+
+Notes:
+
+- `len` returns the _byte_ length of a string. Whatever defines a character might be something else in some languages.
 
 <!--- COMPONENTS BEGIN --->
 
