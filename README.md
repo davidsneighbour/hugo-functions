@@ -64,11 +64,15 @@ While being named `functions` this component adds merely partials that return va
 
 #### getRandomString
 
+_since 1.0.0_
+
 To be written.
 
 #### getReadingTime
 
-```gotemplate
+_since 1.0.0_
+
+```golang
 {{- $readingtime := partial "func/getReadingTime" . -}}
 ```
 
@@ -90,11 +94,35 @@ Configuration options in `data/dnb/functions/config.toml`:
 
 #### getYear
 
+_since 1.0.0_
+
 Returns the current year. Use it for instance to display the current year in your copyright byline.
 
-```gotemplate
+```golang
 {{- partialCached "func/getYear" . . -}}
 ```
+
+#### isCJK
+
+_since 1.0.1_
+
+Checks if the string submitted contains characters of the [CJK Unified Ideographs](https://en.wikipedia.org/wiki/CJK_Unified_Ideographs) (or any configured) range, i.e. if the string is Chinese, Japanese, or Korean.
+
+```golang
+{{- partial "func/isCJK.html" "a string" -}}
+{{- partial "func/isCJK.html" (dict "content" "a string" "against" "cjk") -}}
+```
+
+Either submit a simple string or a dictionary containing the following parameters:
+
+- `content` - a string to test against
+- `against` - the range to test the string.
+  - `cjk` (default) for Chinese, Japanese or Korean
+  - `th` for Thai
+  - `mm` for Myanmar (or Burmese)
+  - `mn` for Mongolian
+
+The partial checks against a configured [Unicode Block](https://en.wikipedia.org/wiki/Unicode_block), the results with special characters or encoding might vary.
 
 <!--- COMPONENTS BEGIN --->
 
