@@ -13,7 +13,7 @@
   "bugs": "https://github.com/dnb-org/dnb-hugo-functions/issues",
   "devDependencies": {
     "@dnb-org/standard-version-config": "^3.4.10",
-    "@dnb-org/tools": "^3.4.12"
+    "@dnb-org/tools": "^3.5.0"
   },
   "overrides": {
     "mem": "^9.0.2"
