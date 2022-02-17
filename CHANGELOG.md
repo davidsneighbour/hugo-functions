@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/dnb-org/dnb-hugo-functions/compare/v1.0.2...v1.0.3) (2022-02-17)
+
+
+### Features
+
+* add getGitHash function ([3f5ad2f](https://github.com/dnb-org/dnb-hugo-functions/commit/3f5ad2f32687a97312b016e85bd1eee0917ed196))
+
+
+### Chore
+
+* **deps:** update dependencies ([6127790](https://github.com/dnb-org/dnb-hugo-functions/commit/61277902d4c7895b250526ed979f4f1f213dc014))
+
+
+### Build System
+
+* fix build files ([c527d8e](https://github.com/dnb-org/dnb-hugo-functions/commit/c527d8e953fdb9b7f79095b545029b363ac64bfa))
+
 ### [1.0.2](https://github.com/dnb-org/dnb-hugo-functions/compare/v1.0.1...v1.0.2) (2022-01-22)
 
 
