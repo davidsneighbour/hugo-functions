@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.6](https://github.com/dnb-org/dnb-hugo-functions/compare/v1.0.5...v1.0.6) (2022-02-22)
+
+
+### Features
+
+* add formatOrdinalDate and documentation for it and getGitHash ([b910a23](https://github.com/dnb-org/dnb-hugo-functions/commit/b910a23293e7310330b12ff40c0139e9ab8db8f8))
+
 ### [1.0.5](https://github.com/dnb-org/dnb-hugo-functions/compare/v1.0.4...v1.0.5) (2022-02-22)
 
 
