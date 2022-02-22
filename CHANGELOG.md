@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://github.com/dnb-org/dnb-hugo-functions/compare/v1.0.4...v1.0.5) (2022-02-22)
+
+
+### Features
+
+* add printCommentHeader partial ([9fb948e](https://github.com/dnb-org/dnb-hugo-functions/commit/9fb948ea30ecfdce9ff4ead987568baf8db22eea))
+
 ### [1.0.4](https://github.com/dnb-org/dnb-hugo-functions/compare/v1.0.2...v1.0.4) (2022-02-17)
 
 
