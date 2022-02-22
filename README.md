@@ -71,7 +71,7 @@ While being named `functions` this component adds merely partials that return va
 - [printCommentHeader](#printcommentheader)
 - [truncate](#truncate)
 
-#### formatOrdinalDate
+#### [formatOrdinalDate](layouts/partials/func/formatOrdinalDate.html)
 
 _since 1.0.6_
 
@@ -94,19 +94,19 @@ The `%s` in the date formatting string will be replaced with the proper ordinal.
 
 [Read about it on my weblog](https://kollitsch.de/blog/2021/print-ordinal-date-suffixes-in-gohugo/).
 
-#### getGitHash
+#### [getGitHash](layouts/partials/func/getGitHash.html)
 
 _since 1.0.6_
 
 Returns a shortened GitHash.
 
-#### getRandomString
+#### [getRandomString](layouts/partials/func/getRandomString.html)
 
 _since 1.0.0_
 
 To be written.
 
-#### getReadingTime
+#### [getReadingTime](layouts/partials/func/getReadingTime.html)
 
 _since 1.0.0_
 
@@ -130,7 +130,7 @@ Configuration options in `data/dnb/functions/config.toml`:
 - wordsperminute (default 220.0) - Words that are read per minute. This must be a float value, not an integer! (no quotation marks and at least ending in .0 to typecast it as float)
 - minutesandseconds (default true) - should the function return minutes and seconds or only minutes (the latter will be rounded up for the seconds in addition)
 
-#### getYear
+#### [getYear](layouts/partials/func/getYear.html)
 
 _since 1.0.0_
 
@@ -140,7 +140,7 @@ Returns the current year. Use it for instance to display the current year in you
 {{- partialCached "func/getYear" . . -}}
 ```
 
-#### isCJK
+#### [isCJK](layouts/partials/func/isCJK.html)
 
 _since 1.0.1_
 
@@ -162,7 +162,7 @@ Either submit a string or a dictionary containing the following parameters:
 
 The partial checks against a configured [Unicode Block](https://en.wikipedia.org/wiki/Unicode_block), the results with special characters or encoding might vary.
 
-#### printCommentHeader
+#### [printCommentHeader](layouts/partials/func/printCommentHeader.html)
 
 _since 1.0.5_
 
@@ -180,7 +180,7 @@ will print
 
 This function will return nothing if the environment is set to production.
 
-#### truncate
+#### [truncate](layouts/partials/func/truncate.html)
 
 _since 1.0.2_, see [GoHugo-Discourse thread](https://discourse.gohugo.io/t/create-description-from-summary/36676), that led to this function.
 
