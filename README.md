@@ -51,7 +51,7 @@ The next time you run `hugo` it will download the latest version of the module.
 ```shell
 # update this module
 hugo mod get -u github.com/dnb-org/dnb-hugo-functions
-# update all modules
+# update all modules recursively over the whole project
 hugo mod get -u ./...
 ```
 <!--- INSTALLUPDATE END --->
@@ -62,12 +62,43 @@ While being named `functions` this component adds merely partials that return va
 
 ### Available Functions
 
+- [formatOrdinalDate](#formatordinaldate)
+- [getGitHash](#getgithash)
 - [getRandomString](#getrandomstring)
 - [getReadingTime](#getreadingtime)
 - [getYear](#getyear)
 - [isCJK](#iscjk)
 - [printCommentHeader](#printcommentheader)
 - [truncate](#truncate)
+
+#### formatOrdinalDate
+
+_since 1.0.6_
+
+Golangs $date.Format is unable to add ordinal suffixes to dates (like 1st, 2nd, 3rd, 4th). Let’s not judge Golang for that. This function returns a formatted string with this suffix replaced.
+
+```golang
+<span title="{{-
+  with partialCached
+    "func/formatOrdinalDate" (
+        dict
+            "format" "January 2%s, 2006 at 15:04 UTCMST:00"
+            "date" .Lastmod
+    )
+  -}}
+  {{- . -}}
+{{- end -}}">
+```
+
+The `%s` in the date formatting string will be replaced with the proper ordinal.
+
+[Read about it on my weblog](https://kollitsch.de/blog/2021/print-ordinal-date-suffixes-in-gohugo/).
+
+#### getGitHash
+
+_since 1.0.6_
+
+Returns a shortened GitHash.
 
 #### getRandomString
 
@@ -202,7 +233,7 @@ Notes:
 | [dnb-hugo-netlification](https://github.com/dnb-org/dnb-hugo-netlification) | a collection of tools that optimize your site on Netlify |
 | [dnb-hugo-opensearch](https://github.com/dnb-org/dnb-hugo-opensearch) | configuration for Open Search |
 | [dnb-hugo-pictures](https://github.com/dnb-org/dnb-hugo-pictures) | |
-| [dnb-hugo-pwa](https://github.com/dnb-org/dnb-hugo-pwa) | Turn your site into a Progressive Web Application. Add caching, offline mode and favicon support. |
+| [dnb-hugo-pwa](https://github.com/dnb-org/dnb-hugo-pwa) | Automatically turns your site into a PWA |
 | [dnb-hugo-renderhooks](https://github.com/dnb-org/dnb-hugo-renderhooks) | render hooks for Markdown markup |
 | [dnb-hugo-robots](https://github.com/dnb-org/dnb-hugo-robots) | Add a customizable robots.txt to your website. |
 | [dnb-hugo-schema](https://github.com/dnb-org/dnb-hugo-schema) | |

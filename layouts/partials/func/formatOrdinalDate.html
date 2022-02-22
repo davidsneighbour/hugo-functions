@@ -1,5 +1,5 @@
-{{ $format := .format }}
-{{ $date := .date }}
+{{- $format := .format -}}
+{{- $date := .date -}}
 {{- $shortend := "th" -}}
 {{- if in (slice 1 21 31) $date.Day -}}
   {{- $shortend = "st" -}}
@@ -7,11 +7,5 @@
   {{- $shortend = "nd" -}}
 {{- else if in (slice 3 23) $date.Day -}}
   {{- $shortend = "rd" -}}
-{{- end }}
+{{- end -}}
 {{- return $date.Format (printf $format $shortend) -}}
-{{- /*
-evaluate:
-this should work too:
-{{- $shortend := humanize $date.Day -}}
-but doesn't right now.
-*/ -}}
