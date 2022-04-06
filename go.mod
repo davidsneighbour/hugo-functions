@@ -1,3 +1,3 @@
-module github.com/dnb-org/dnb-hugo-functions
+module github.com/davidsneighbour/hugo-functions
 
 go 1.17
