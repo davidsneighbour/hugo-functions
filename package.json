@@ -1,5 +1,5 @@
 {
-  "name": "@dnb-org/dnb-hugo-functions",
+  "name": "@davidsneighbour/hugo-functions",
   "version": "1.0.8",
   "license": "MIT",
   "description": "Template functions for Hugo",
@@ -8,9 +8,9 @@
     "email": "patrick@davids-neighbour.com",
     "web": "https://davids-neighbour.com"
   },
-  "homepage": "https://github.com/dnb-org/dnb-hugo-functions",
-  "repository": "dnb-org/dnb-hugo-functions",
-  "bugs": "https://github.com/dnb-org/dnb-hugo-functions/issues",
+  "homepage": "https://github.com/davidsneighbour/hugo-functions",
+  "repository": "davidsneighbour/hugo-functions",
+  "bugs": "https://github.com/davidsneighbour/hugo-functions/issues",
   "devDependencies": {
     "@dnb-org/standard-version-config": "^3.5.6",
     "@dnb-org/tools": "^3.5.6"
