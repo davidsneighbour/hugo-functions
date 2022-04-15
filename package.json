@@ -12,8 +12,8 @@
   "repository": "davidsneighbour/hugo-functions",
   "bugs": "https://github.com/davidsneighbour/hugo-functions/issues",
   "devDependencies": {
-    "@dnb-org/standard-version-config": "^3.5.6",
-    "@dnb-org/tools": "^3.5.6"
+    "@davidsneighbour/standard-version-config": "^4.0.1",
+    "@davidsneighbour/tools": "^4.0.1"
   },
   "overrides": {
     "mem": "^9.0.2"
@@ -26,5 +26,5 @@
     "release:minor": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release/postrelease"
   },
   "private": true,
-  "slug": "dnb-hugo-functions"
+  "slug": "hugo-functions"
 }
