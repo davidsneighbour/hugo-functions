@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/davidsneighbour/hugo-functions/compare/v1.1.0...v1.1.1) (2022-04-20)
+
+
+### Build System
+
+* update Github organization name & use newer NPM dependencies ([#29](https://github.com/davidsneighbour/hugo-functions/issues/29)) ([ad9ce6d](https://github.com/davidsneighbour/hugo-functions/commit/ad9ce6ded79c7ccb63834ae04938ee27b281b2f3))
+
+
+### Chore
+
+* fix env template ([d46366f](https://github.com/davidsneighbour/hugo-functions/commit/d46366fec0c40ff646c6f0048ba3f3281d9eeccb))
+
 ## [1.1.0](https://github.com/davidsneighbour/hugo-functions/compare/v1.0.8...v1.1.0) (2022-04-07)
 
 
