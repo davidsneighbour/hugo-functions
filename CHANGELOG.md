@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/davidsneighbour/hugo-functions/compare/v1.1.1...v1.1.2) (2022-07-24)
+
+
+### Features
+
+* add getInner function ([8caaf40](https://github.com/davidsneighbour/hugo-functions/commit/8caaf401f1563b25b8d0840bbbe076841dca2a27))
+
+
+### Chore
+
+* **config:** set dependabot to monthly only ([5030e5e](https://github.com/davidsneighbour/hugo-functions/commit/5030e5ee70b51c0bcbd2ab218e6715156f673172))
+
+
+### Documentation
+
+* typos and formatting ([9fb1bb8](https://github.com/davidsneighbour/hugo-functions/commit/9fb1bb8c9eca8eeab7899d78a2e37ebeeebc352f))
+
+
+### Refactors
+
+* move undocumented functions around ([f58f496](https://github.com/davidsneighbour/hugo-functions/commit/f58f496add474d087c3a7a674aa89aa566e29485))
+
 ### [1.1.1](https://github.com/davidsneighbour/hugo-functions/compare/v1.1.0...v1.1.1) (2022-04-20)
 
 

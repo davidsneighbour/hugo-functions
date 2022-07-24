@@ -1,6 +1,6 @@
 {
   "name": "@davidsneighbour/hugo-functions",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
   "description": "Template functions for Hugo",
   "author": {
