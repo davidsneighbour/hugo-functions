@@ -12,6 +12,7 @@ Usage:
 
 */ -}}
 {{- $inner := (strings.Chomp .Inner) -}}
+{{- $inner = trim $inner " " -}}
 {{- if eq $inner "" -}}
   {{- $inner = false -}}
 {{- end -}}

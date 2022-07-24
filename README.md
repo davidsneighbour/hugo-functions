@@ -5,9 +5,9 @@
 
 <!--- CARD END --->
 
-# David's Neighbour GoHugo Component / Functions
+# GoHugo Component / Functions
 
-A Hugo theme component with helper functions for other projects.
+A GoHugo theme component with helper functions for other projects.
 
 <!--- THINGSTOKNOW BEGIN --->
 
@@ -68,6 +68,7 @@ While being named `functions` this component adds merely partials that return va
 ### Available Functions
 
 - [formatOrdinalDate](/davidsneighbour/hugo-functions/wiki/function-formatordinaldate)
+- [getAttributesFromTitle](/davidsneighbour/hugo-functions/wiki/function-getattributesfromtitle)
 - [getConfiguration](/davidsneighbour/hugo-functions/wiki/function-getconfiguration)
 - [getDescription](/davidsneighbour/hugo-functions/wiki/function-getdescription)
 - [getGitHash](/davidsneighbour/hugo-functions/wiki/function-getgithash)
@@ -78,7 +79,6 @@ While being named `functions` this component adds merely partials that return va
 - [getReadingTime](/davidsneighbour/hugo-functions/wiki/function-getreadingtime)
 - [getRemoteImage](/davidsneighbour/hugo-functions/wiki/function-getremoteimage)
 - [getStylesheet](/davidsneighbour/hugo-functions/wiki/function-getstylesheet)
-- [getTitle](/davidsneighbour/hugo-functions/wiki/function-gettitle)
 - [getYear](/davidsneighbour/hugo-functions/wiki/function-getyear)
 - [isCJK](/davidsneighbour/hugo-functions/wiki/function-iscjk)
 - [printCommentHeader](/davidsneighbour/hugo-functions/wiki/function-printcommentheader)

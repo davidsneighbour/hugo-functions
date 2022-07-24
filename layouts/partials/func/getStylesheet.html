@@ -1,12 +1,14 @@
 {{- /* create collection */ -}}
 {{- $collection := slice -}}
+        {{ warnf "%v" $collection }}
 
 {{- /* load plugged in templated scripts from modules */ -}}
-{{ range $key, $value := $.Site.Data.dnb }}
+{{/* {{ range $key, $value := $.Site.Data.dnb }}
   {{- partial "debug.html" (dict "message" (printf "Checking SCSSTemplate configuration %s" $key) "severity" "debug") -}}
   {{ if isset $value "config" }}
     {{ if isset $value.config "plugins" }}
       {{ if isset $value.config.plugins "scssTemplates" }}
+        {{ warnf "%v" $value.config.plugins.scssTemplates }}
         {{ range $value.config.plugins.scssTemplates }}
           {{- partial "debug.html" (dict "message" (printf "Loading SCSSTemplate %s" .) "severity" "debug") -}}
           {{ $template := . }}
@@ -16,14 +18,15 @@
       {{ end }}
     {{ end }}
   {{ end }}
-{{ end }}
+{{ end }} */}}
 
 {{/* load plugged in scripts from modules */}}
-{{ range $key, $value := $.Site.Data.dnb }}
+{{/* {{ range $key, $value := $.Site.Data.dnb }}
   {{- partial "debug.html" (dict "message" (printf "Checking SCSS configuration %s" $key) "severity" "debug") -}}
   {{ if isset $value "config" }}
     {{ if isset $value.config "plugins" }}
       {{ if isset $value.config.plugins "scss" }}
+        {{ warnf "%v" $value.config.plugins.scss }}
         {{ range $value.config.plugins.scss }}
           {{- partial "debug.html" (dict "message" (printf "Loading SCSSFile %s" .) "severity" "debug") -}}
           {{ $collection = $collection | append (resources.Get .) }}
@@ -31,9 +34,11 @@
       {{ end }}
     {{ end }}
   {{ end }}
-{{ end }}
+{{ end }} */}}
 
-{{ $collection = $collection | append (resources.Get "scss/theme.scss") | resources.Concat "stylesheet.scss" }}
+{{ $collection = $collection | append (resources.Get "scss/theme.scss") }}
+{{ warnf "%v" $collection }}
+{{ $collection = $collection | resources.Concat "stylesheet.scss" }}
 
 {{ $config := site.Data.dnb.functions.system.config }}
 
