@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://github.com/davidsneighbour/hugo-functions/compare/v1.1.2...v1.1.3) (2022-09-01)
+
+
+### Chore
+
+* **deps:** update dependencies ([081f8da](https://github.com/davidsneighbour/hugo-functions/commit/081f8da43ad3424e891cedc8146969bc6f274448))
+
 ### [1.1.2](https://github.com/davidsneighbour/hugo-functions/compare/v1.1.1...v1.1.2) (2022-07-24)
 
 
